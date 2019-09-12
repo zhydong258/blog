@@ -1,7 +1,8 @@
 ---
 title: Cygwin server
 date: 2016-12-10 16:52:54
-tags:
+tags: cygwin
+categories: 运维
 ---
 ## 安装cygwin server
 

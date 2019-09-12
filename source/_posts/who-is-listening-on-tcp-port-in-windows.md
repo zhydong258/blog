@@ -1,7 +1,8 @@
 ---
 title: win下查看端口
 date: 2016-12-11 16:52:54
-tags:
+tags: windows
+categories: 运维
 ---
 ## 起因
 

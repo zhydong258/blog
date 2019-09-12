@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: WARNING! DO NOT ANSWER! 
-subtitle: 
+title: 1379号监听站
+subtitle: 弱小和无知，从来不是生存的障碍，傲慢才是。
 description:
 keywords:
 author: Ethan Dong 
@@ -79,4 +79,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/zhydong258/zhydong258.github.com.git
+  branch: 
+  message: 

@@ -1,7 +1,10 @@
 ---
 title: Jekyll Comments
 date: 2016-12-11 16:52:54
-tags:
+tags: 
+  - jekyll comments
+  - comments
+categories: 运维
 ---
 ## Jekyll添加评论系统
 

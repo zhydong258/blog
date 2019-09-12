@@ -1,7 +1,8 @@
 ---
 title: 'How to delete ms-resource:AppName/Text shortcuts in StartMenu'
 date: 2019-09-11 16:52:54
-tags:
+tags: windows
+categories: 运维
 ---
 原文出处如下：
 “找不到了，反正就是在microsoft的问答上看到的”
