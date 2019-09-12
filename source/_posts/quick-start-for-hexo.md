@@ -12,6 +12,8 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ``` bash
 $ hexo new "My New Post"
+$ hexo new page about
+$ hexo new page tags
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
@@ -20,6 +22,7 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 
 ``` bash
 $ hexo server
+$ hexo server -p 5000
 ```
 
 More info: [Server](https://hexo.io/docs/server.html)
@@ -28,6 +31,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 
 ``` bash
 $ hexo generate
+$ hexo generate --deploy
 ```
 
 More info: [Generating](https://hexo.io/docs/generating.html)
@@ -39,3 +43,14 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+### Add tags and categories
+
+```yaml
+tags:
+  - Testing
+  - Another Tag
+categories: Label
+```
+
+More info: [Tags](http://theme-next.iissnan.com/theme-settings.html)
