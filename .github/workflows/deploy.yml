@@ -39,7 +39,7 @@ jobs:
           # GitHub 的 Personal access tokens
           token: ${{secrets.BLOG_DEPLOY}}
           # 更换为自己的 <user>/<user>.github.io
-          repository-name: zhydong258/zhydong258.github.io
+          #repository-name: zhydong258/zhydong258.github.io
           # 要部署到的分支
           branch: main
           # 上一步生成的静态文件的地址
