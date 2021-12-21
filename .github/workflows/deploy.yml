@@ -33,7 +33,7 @@ jobs:
 
       # 部署到 GitHub Pages
       - name: 🚀 Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7git 
+        uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           # GitHub 的 Personal access tokens
           token: ${{secrets.Github_Pages_Deploy}}
