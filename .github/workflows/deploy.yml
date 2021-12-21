@@ -9,7 +9,6 @@ on:
       - README.md
       - LICENSE
 
-
 # 任务
 jobs:
   build-and-deploy:
@@ -17,28 +16,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 拉取代码
-      - name: Checkout
+      - name: 📦 Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      # 生成静态文件
+      - name: 🔧 Install and Build
+        run: |
+          npm ci
+          npm run build
+        # 如果采用 yarn 进行包管理，则使用下面的代码
+        #  yarn
+        #  yarn build
+
+      # 部署到 GitHub Pages
+      - name: 🚀 Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          node-version: '14'
-
-      - name: Setup hexo
-        run: |
-          npm install hexo-cli -g
-          npm install
-
-      - name: Prepare git enveriment
-        run: |
-          git config --global user.email ethan.dong@outlook.com
-          git config --global user.name ethan.dong
-
-      - name: Build
-        run: |
-          hexo clean
-          hexo generate
-          hexo deploy
+          # GitHub 的 Personal access tokens
+          token: ${{secrets.Github_Pages_Deploy}}
+          # 更换为自己的 <user>/<user>.github.io
+          repository-name: zhydong258/zhydong258.github.io
+          # 要部署到的分支
+          branch: main
+          # 上一步生成的静态文件的地址
+          folder: public
