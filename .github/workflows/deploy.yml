@@ -25,7 +25,7 @@ jobs:
       - name: 🔧 Install and Build
         run: |
           npm install hexo-cli -g
-          hexo install
+          npm install
           hexo clean
           hexo generate
         # 如果采用 yarn 进行包管理，则使用下面的代码
