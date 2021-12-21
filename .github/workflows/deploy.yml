@@ -37,7 +37,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           # GitHub 的 Personal access tokens
-          token: ${{secrets.Github_Pages_Deploy}}
+          token: ${{secrets.BLOG_DEPLOY}}
           # 更换为自己的 <user>/<user>.github.io
           repository-name: zhydong258/zhydong258.github.io
           # 要部署到的分支
