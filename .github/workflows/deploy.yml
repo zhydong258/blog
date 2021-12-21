@@ -32,6 +32,11 @@ jobs:
           npm install hexo-cli -g
           npm install
 
+      - name: Prepare git enveriment
+        run: |
+          git config --global user.email ethan.dong@outlook.com
+          git config --global user.name ethan.dong
+
       - name: Build
         run: |
           hexo clean
