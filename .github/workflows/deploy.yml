@@ -42,13 +42,3 @@ jobs:
           hexo clean
           hexo generate
           hexo deploy
-
-      # 2、部署到 GitHub Pages
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.Github_Pages_TOKEN }}
-          REPOSITORY_NAME: zhydong258/zhydong258.github.io
-          BRANCH: master
-          FOLDER: public
-          #注意这里的 public 是仓库根目录下的 public，也就是 npm run build 生成静态资源的路径，比如有的人是 `docs/.vuepress/dist`
