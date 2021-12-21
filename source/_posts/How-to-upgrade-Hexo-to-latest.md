@@ -17,7 +17,7 @@ $ npm install -g hexo-cli
 
 ``` bash
 $ npm install -g npm-check
-$ npm npm-check
+$ npm-check
 ```
 检查系统安装的插件是否需要升级。
 

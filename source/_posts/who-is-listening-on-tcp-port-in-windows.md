@@ -14,6 +14,6 @@ jekyll的整个环境是运行在cygwin下面的，每次要在本次运行jekyl
 ``$ netstat -aon | more``
 
 看看是哪个PID在占用4000.通过PID去找到这个process。在task manager中去找PID。
-是个foxitprotect.exe，福昕的保护进程。把福昕卸载了。
+是foxitprotect.exe，福昕的保护进程。把福昕卸载了。
 
-问题解决了。话说，用什么看ＰＤＦ了。
+问题解决了。话说，用什么看PDF呢？
