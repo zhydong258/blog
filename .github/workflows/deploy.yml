@@ -24,15 +24,16 @@ jobs:
       # 生成静态文件
       - name: 🔧 Install and Build
         run: |
-          npm ci
-          npm run build
+          npm install hexo-cli -g
+          hexo clean
+          hexo generate
         # 如果采用 yarn 进行包管理，则使用下面的代码
         #  yarn
         #  yarn build
 
       # 部署到 GitHub Pages
       - name: 🚀 Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7
+        uses: JamesIves/github-pages-deploy-action@4.1.7git 
         with:
           # GitHub 的 Personal access tokens
           token: ${{secrets.Github_Pages_Deploy}}
